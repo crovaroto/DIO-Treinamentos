@@ -1,0 +1,41 @@
+Introdução Git/GitHub
+Comandos básicos - sistemas operacionais
+ - Listar diretórios
+  * Windows: dir		
+  * Linux: ls
+  
+- Mudar diretório
+ * Windows: cd /
+  *Linux: cd / 
+  
+- Voltar um nível de diretório
+  * windows: e Linux: cd ..
+  
+- Limpar terminal  
+ * Windows: cls
+ * linux:  CTRL + L
+ 
+- Excluir diretório
+ * Windows: rmdir <diretório>  /S /Q
+ * Linux: rm -rf <diretório]> 
+
+- Instalação GIT
+ - Seguir os pasos do site
+
+- Chave SSH
+ - Criar uma chave através do Settings do profile no github.com
+ - Gerar chave via CLI
+  - Comandos  
+    - ssh-keygen -t ed25519 -c <e-mail cadastrado> 
+    * Não indicar pasta (aconselhável) 
+    - Informar senha
+    - Pegar a chave pública gerada no diretório através do comanda cat 
+    * (cat = mostrar conteúdo)
+ - No GitHub.com
+  - Selecionar Add New Key
+  - Informar  a chaver copiada e confirmar
+ - No Git CLI
+  - Inicializar SSH Agent     
+   - Comando: eval $(ssh-agent -s)
+  - Incluir chave 
+    -Comando: ssh-add <caminho chave privada>

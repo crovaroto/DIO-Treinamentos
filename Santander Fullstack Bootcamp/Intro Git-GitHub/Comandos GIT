@@ -1,0 +1,37 @@
+Comandos GIT
+ - Init
+   - Inicialização do git em um diretório
+   - Comando: git init 
+   - Cria repositório local
+  
+- Configurações iniciais
+  - git config --global user.email <e-mail configurado no github>
+  - git config --global user.name <nome de usuário  configurado no github>
+
+- Commit
+  - git add *
+    - Adiciona todos os arquivos novos e/ou que sofrerão alterações.
+  - git commit -m "<mensagem>"
+    - Coloca as alterações no stage
+      - Posição antes de adicionar o repositório remoto.
+
+- Status
+  - git status
+    - Verifica o status atual de todas as movimentaçẽos realziadas no 
+      repositório.
+
+** Mudar configuração do git 
+  - git config --global unset 
+
+- Adiconar referência de repositório remoto
+  - git remote add origin <caminho do repositório (HTTPS ou SSH)>
+  
+_ Encaminhar alterações ao repostório remoto
+  - git push origin master (ou main)
+
+- Recuperar arquivo(s) do servidor remoto
+  - git pull origin master (ou main)
+
+- Baixar repositório
+  - Clonar repositório
+    - git clone <caminho do repositório (HTTPS ou SSH)>
