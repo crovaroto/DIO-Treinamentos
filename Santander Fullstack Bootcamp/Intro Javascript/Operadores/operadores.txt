@@ -1,0 +1,34 @@
+Atribuições
+ =  -> x= y -> x= y
+ += -> x+= y -> x= x + y
+ *= -> x*= y -> x= x * y
+ /=-> x/= y -> x= x / y
+ %=-> x%= y -> x= x % y
+
+Operadores
+ + -> Adição
+ - -> Subtração
+ * -> Multiplicação
+ / -> Divisão
+ ** -> Exponencial
+ % -> Módulo
+ ++ Incremento
+ -- Decremento
+
+Comparação
+ == (2x =) -> Igual a
+ === (3x =) -> Mesmo valor e mesmo tipo
+ != (! =) -> diferente
+ !== (! 2x =) -> Valor e tipo diferente
+ > -> Maior que
+ < -> Menor que
+ >= (> =) -> Maior ou igual
+ <= (< =)-> Menor ou igual
+
+Lógica
+ && -> "e" lógico
+ || -> "ou" lógico
+ ! -> "não" lógico
+
+Condicional
+Ternário  -> condição ? expressão1 : expressão2
