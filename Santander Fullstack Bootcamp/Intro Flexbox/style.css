@@ -1,0 +1,399 @@
+.blue{
+  background-color: blue;
+  }
+  .green{
+    background-color: lightgreen;
+  }
+  .orange{
+    background-color: orangered;
+  }
+
+.flex {
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  display: flex;
+}
+
+.item {
+  background-color: aqua;
+  margin: 5px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.row-reverse li {
+  
+  background-color: red;
+}
+
+.column{
+  float: left;
+  flex-direction: column;
+}
+
+.column li {
+  
+  background-color: orange;
+}
+
+.column-reverse{
+  float: right;
+  flex-direction: column-reverse;
+}
+
+.column-reverse li {
+  
+  background-color: purple;
+}
+
+/*Flex Container*/
+.flex-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;   
+}
+
+.flex-item {
+  background: blue;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+/**/
+
+/*Flex Container Wrap */
+.flex-container-wrap{
+  display: flex;
+  height: 150px;
+  border: 2px solid black;
+  max-width: 300px;  
+}
+
+.flex-item-wrap{
+  font-size: 24px;
+  height: 50%;
+  text-align: center;
+  min-width: 100px;
+  line-height: 50px;    
+}
+
+.no-wrap{
+  flex-wrap: nowrap ;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+/**/
+
+/*Flex Container Flow */
+.flex-container-flow{
+  display: flex;  
+  border: 1px solid black;
+  max-width: 500px;
+}
+
+.flex-item-flow{
+  background-color: blueviolet;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.default{
+  flex-flow: row nowrap;  
+}
+
+.warp{
+  flex-flow: row wrap;  
+}
+
+.warp-reverse{
+  flex-flow: row wrap-reverse;  
+}
+
+.row-reverse-nowarp{
+  flex-flow: row-reverse nowrap;  
+}
+
+.row-reverse-warp{
+  flex-flow: row-reverse wrap;  
+}
+
+.row-reverse-warp-reverse{
+  flex-flow: row-reverse wrap-reverse;
+}
+/**/
+
+/*Flex Container Content*/
+.flex-container-content{  
+  display: flex;  
+  border: 1px solid black;
+  margin: 0;
+  max-width: 400px;
+}
+
+.flex-item-content{
+  background-color: brown;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.flex-start{
+  justify-content: flex-start
+}
+
+.flex-end{
+  justify-content: flex-end
+}
+
+.flex-center{
+  justify-content: center
+}
+
+.flex-space-between{
+  justify-content: space-between
+}
+
+.flex-space-around{
+  justify-content: space-around
+}
+
+.content-column{
+  flex-direction: column;
+  min-height: 200px;
+}
+/**/
+
+/*Flex Container Align*/
+.flex-container-align {
+  max-width: 350px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.flex-item-align {
+  background-color: blueviolet;
+  margin: 5px;
+  color: white;
+  text-align: center;  
+  flex: 1;
+}
+
+.flex-align-center{
+  align-items: center;
+}
+
+.flex-align-stretch{
+  align-items: stretch;
+}
+
+.flex-align-start{
+  align-items: flex-start;
+}
+
+.flex-align-end{
+  align-items: flex-end;
+}
+
+.flex-align-baseline{
+  align-items: baseline;
+}
+
+.align-column {
+  flex-direction: column;
+}
+
+.align-central {
+  height: 400px;
+  justify-content: center;
+}
+
+.align-central .flex-item-align{
+  flex: 0;
+  padding: 10px;  
+}
+
+.flex-container-align-content{
+  height: 400px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.flex-item-align-content{
+  background-color: orangered;
+  padding: 0 5px;
+  margin: 5px;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.flex-align-content-stretch {
+  align-content: stretch; 
+}
+
+.flex-align-content-center {
+  align-content: center; 
+}
+
+.flex-align-content-start {
+  align-content: flex-start; 
+}
+
+.flex-align-content-end {
+  align-content: flex-end; 
+}
+
+.flex-align-content-space-around {
+  align-content: space-around; 
+}
+
+.flex-align-content-space-between {
+  align-content: space-between; 
+}
+/**/
+
+/* Flex Items */
+.flex-items-container {
+  display: flex;
+  border: 1px solid black;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.flex-items-item{
+  background-color: orangered;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Flex Items Grow* */
+.fg-0{
+  flex-grow: 0;;
+}
+
+.fg-1{
+  flex-grow: 1;
+}
+
+.fg-2{
+  flex-grow: 2;
+}
+
+.fg-3{
+  flex-grow: 3;
+}
+/**/
+
+
+/*Flex Items Basis*/
+.flex-basis-auto{
+  flex-basis: auto;
+}
+
+.flex-basis-zero{
+  flex-basis: 0;
+}
+
+.flex-basis-valor{
+  flex-basis: 75px;
+}
+/* */
+
+/*Flex Items Shrink */
+.flex-shrink-1{
+  flex-shrink: 1;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
+  flex-basis: 100px;
+}
+
+.flex-shrink-2{
+  flex-shrink: 2;
+  flex-basis: 100px;  
+}
+
+.flex-shrink-3{
+  flex-shrink: 3;
+  flex-basis: 100px;  
+}
+/**/
+
+/*Flex Items - Atributo Flex */
+.flex-1 {
+  flex: 1;
+  /* grow = 1 shrink = 1 basis = 0 */
+}
+
+.flex-2 {
+  flex: 2;
+  /* grow = 2 shrink = 1 basis = 0 */
+}
+/**/
+
+/* Flex Items Order */
+.flex-order-1{
+  order: 1;
+}
+
+.flex-order-2{
+  order: 2;
+}
+
+.flex-order-3{
+  order: 3;
+}
+/**/
+
+/* Flex Items Align Self */
+.flex-align_self_center{
+  align-self: center;
+}
+
+.flex-align_self_stretch{
+  align-self: stretch;
+}
+
+.flex-align_self_start{
+  align-self: flex-start;
+}
+
+.flex-align_self_end{
+  align-self: flex-end;
+}
+
+.flex-align_self_baseline{
+  align-self: baseline;
+}
+
+.flex-align_self_auto{
+  align-self: auto;
+}
+/**/
