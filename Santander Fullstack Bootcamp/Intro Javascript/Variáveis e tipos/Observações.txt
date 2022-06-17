@@ -1,0 +1,41 @@
+Variáveis
+Diferenças entre var, const e let
+- var: escopo é global
+- const: armazena valores que não podem ser modificados (declaradas em SNAKE_UPPER_CASE).
+- let: o escopo é dentro de um bloco (escopo de bloco).
+
+* Hoisting: atribuição de valor a variável antes de declará-la, utilizando var.
+
+
+Tipos
+ - Tipos primitivos
+  - number
+  - string
+  - boolean
+  - null
+  - undefied
+ 
+ - Tipos complexos
+  - Array
+  - Object
+
+  ---------------------- string ----------------------
+  * Passagem de variáveis dentro de uma String: `${} `
+  * quebra de linha "\n"
+
+  ---------------------- array -----------------------
+  Lista iteráveis de elementos
+  Possui index, começando de zero
+  declaração: array = [] (array vazio)
+
+  Adicionar registro no array
+   - No final da lista: array.push()
+   - No começo da lista: arry.unshift()
+   
+  Retirar registro no array
+   - No final  da lista: array.pop()
+   - No começo da lista: array.shift() 
+
+ --------------------- Objeto -----------------------
+ Estrutura tipo "chave  e valor"
+ let variável = {chave : valor}
