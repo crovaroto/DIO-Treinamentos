@@ -1,0 +1,30 @@
+- Tipos de erros
+  - Objeto Error do ECMAScript
+    - Erro que acontece em tempo de execução.
+    - Composto de mensagem, nome do erro, linha que aconteceu e o call stack.
+
+  - DOMException
+    - Ocorre no código que acontece numa página web.
+
+  - Tratamento de erros
+    - Diferença entre throw e return
+      - throw 
+        - trata mensagem como erro, através de uma caracterização específica.
+      - return  
+        - retorna uma mensagem de retorno da função.
+
+    - Try .. catch
+      - estrutura para tratamento de exceções, permitindo manipulação de erros.
+
+    - Finally
+      - Complemento ao try .. catch onde as ações implemntadas dentro do Finally
+        serão executadas.
+
+  - Objeto Error  
+    - Permite a personalização de erros.
+    - Sintaxe:
+      new Error(message, fileName, lineNumber)
+    - Exemplo:
+      const erro = new Error('Mensagem inválida');
+      erro.name = <nome do erro>;
+      throw erro;

@@ -1,0 +1,98 @@
+Tipos de função
+- Estrutura 
+  - function nome(parametros) {
+    //instruções
+    return; // valor de retorno
+  }
+
+- Função anônima
+ - Uma variável que pode armazenar valor
+ - Exemplo: 
+    const soma = function (a, b) {
+      return a + b;
+    }
+
+- Função auto invocável
+ - Uma função anônima entre parênteses, seguida por outro par de parênteses,
+   que representa sua chamada
+ - Exemplo:
+    (
+      function() {
+        let name = "Digital Innovation One";
+        return name;
+      }
+    )();
+
+- Callbacks
+  - Uma função passada como argumento pra outra. Maior controle da ordem de 
+    chamada.
+  - Exemplo: 
+    const calc = function(operacao, num1, num2) {
+      return operacao(num1, num2);
+    }
+
+    const soma = function(num1, num2) {
+      retunr num1 + num2;
+    }
+
+    const sub = function(num1, num2) {
+      return num1 - num2;
+    }
+
+    const resultSom = calc(soma, 1, 2);
+    const resultSub = calc(sub, 1, 2);
+
+- Objeto "arguments"
+ - Um array de todos os parâmetros passados quando a função foi invocada
+ - Exemplo:
+  function findMax(){
+    let max = -Infinity;
+    for(let = 0; i < arguments.length; i++) {
+      if (arguments[i] > max) {
+        max = arguments[i];
+      }
+    }
+    return max;
+  }
+
+  - This
+   - Referência de contexto
+   - Manipulação
+    - Call
+      - exemplo:
+        const pessoa = {
+          nome: Miguel
+        };
+        const animal = {
+          nome = Murphy
+        };
+
+        function getSomething() {
+          console.log(this.nome);
+        }
+
+        getSomething.call(pessoa); // Chamará o objeto pessoa
+    - Apply
+      - exemplo:
+        const pessoa = {
+          nome: Miguel
+        };
+        const animal = {
+          nome = Murphy
+        };
+
+        function getSomething() {
+          console.log(this.nome);
+        }
+
+        getSomething.call(pessoa); // Chamará o objeto pessoa, porém argumentos 
+                                      são passados por array,e  não parâmetros.
+
+- Arrow Functions
+ - Sintaxe                                      
+   const <Nome-da-variável> = (parâmetros) => {}
+ - Restrições   
+  - "this" será sem rpe do método global
+  - Não existe o "arguments"
+  - Não se aplica a constructor.
+    
