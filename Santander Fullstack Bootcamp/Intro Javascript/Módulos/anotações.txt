@@ -1,0 +1,25 @@
+Módulos
+ - Arquivos javascript quer tem a capacidade de exportar e importar informações 
+   de outros arquivos do mesmo tipo
+ - Vantagens
+  - Organização do código
+  - Compartilhar variáveis em escopos diferentes
+  - Explicita as dependências dos arquivos.
+ - Utilização
+  -  exportar
+    - Sintaxe
+      - Named exports 
+        - export function xpto() {}
+      - Default exports
+        - Só pode haver um por arquivo
+        - export  default function xpto() {}
+
+  - importar  
+    - Sintaxe
+      - Named import: import {funcao, variavel, classe} from './arquivo.js'
+      - Default import: import valorDefault from './arquivo.js'
+      - alias: import {arquivo as Apelido} from './arquivo.js'
+      - importar tudo do arquivo import * as INFOS from './arquivos.js'
+  
+  - Vinculação ao HTML
+    <script type="module" src="./mais.js"></script>

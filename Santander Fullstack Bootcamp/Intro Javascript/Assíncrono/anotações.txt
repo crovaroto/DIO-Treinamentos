@@ -1,0 +1,39 @@
+- Promises
+  - Objeto de processamento assíncrono
+  - Seu valor é desconhecido. A promise pode, então, ser 
+    resolvida ou rejeitada.
+  - Possui 3 estados
+    - Pendente;
+    - Completada;
+    - Rejeitada;
+  - Estrutura:
+    const myPromise = new Promise((resolve, reject) => {
+      window.setTimeout(() => {
+        resolve(console.log('Resolvida'));
+      }, 2000);
+    });
+    - Async/Await
+      - Funções assíncronas precisam dessas duas palavras
+      - Exemplo:
+        async function resolvePromise() {
+          const myPromise = new Promise((resolve, reject) => {
+            window.setTimeout(() => {
+                resolve(console.log('Resolvida'));
+            }, 3000);
+          });  
+          const resolved = await myPromise
+                .then((result) => result + ' passando pelo then')
+                .then((result) => result + ' e agora acabou!')
+                .catch((err) => consoloe.log(err.message));
+
+          return resolved;
+        }
+
+  - Consumo de API
+    - Fetch
+      - Consome API
+      - Sintaxe:
+        fetch(url, options)
+          .then(response => response.json())
+          .then(json => console.log(json))
+      - Possível fazer operações no banco, aravés de POST, GET, PUT, DELETE          

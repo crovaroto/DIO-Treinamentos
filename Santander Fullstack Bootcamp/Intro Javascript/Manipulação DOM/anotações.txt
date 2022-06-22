@@ -1,0 +1,57 @@
+- DOM
+  - Document Object Model
+  - Padrão de como acessar e modificar os elementros HTML de uma página
+- BOM
+  - Browser Object Model
+  - Tudo o que está dentro do objeto window.
+  - O DOM está "dentro" do BOM.
+
+- Métodos do DOM
+  - document.getElementById()
+  - document.getElementsByTagName() => retorna array de todas as ocorrências com a tag
+  - document.getElementsByClassName() => retorna array de todas as ocorrências com a class
+  - document.querySelectorAll() => buscar por elementos com mais de um seletor => retorna array
+  - Adicionar e deletar elementos
+    - document.createElement(element) => cria um novo elemento HTML
+    - document.removeChild(element) => remova um elemento
+    - document.appendChild(element) => adiciona elemento a partir de um "pai"
+    - document.replaceChild(neww, old) => substitui elementos
+
+- Manipular estilos
+  - element.classList
+    - classList.add() => adiciona a classe
+    - classList.remove() => remove uma classe
+    - classList.toggle() => adiciona uma classe caso ela não exista na lista e 
+                            remove-a caso não exista.
+    - Acessando diretamente o CSS de um elemento  
+      - Ex.: document.getElementsByTagName(element).style.color = 'blue'; 
+
+- Eventos
+  - Qualquer tipo de ação de interação na página Web.
+  - Tipos
+    - Mouse
+      - mouseover
+      - mouseout
+    - Clique
+      - click
+      - dbclick
+    - Atualização
+      - change
+      - load
+  - Acionar os Eventos
+    - Event listener
+      - No Javascript, cria um evento que vais er acionado no momento em que o 
+        usuário realizar determinada ação.
+      Ex.: const botao = document.getelementById('meuBotao');
+      botao.addEventListener("click", outraFuncao), onde
+        - click = função de interação
+        - outraFuncao =  função a ser executada no momento da ação.
+    - No HTML        
+      - Ex.: <h1 onclick="mudaTexto(this)">Clique aqui</h1>
+             <script>
+              function mudaTexto(id) {
+                id.innerHTML = "Mudei"!
+              }
+            </script>
+
+
