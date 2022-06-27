@@ -1,0 +1,1 @@
+//Arquivo utilizado para inserir tipos prórpios a bibliotecas importadas.
